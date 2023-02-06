@@ -106,13 +106,15 @@ Use the addReview function below to do the following:
 
 
 function addReview(result, name, rating, feedback){
-  result.push(result.name = name)
-  result.push(result.rating = rating)
-  result.push(result.feedback = feedback) 
-  Object.result = new Object
-  return result; 
+const newObject = {
+  name: name,
+  rating: rating,
+  feedback: feedback,
 }
-// console.log(addReview(reviews, 'Billy', 2, 'Lame food!'));
+result.push(newObject);
+return result;
+}
+console.log(addReview(reviews, 'Billy', 2, 'Lame food!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
